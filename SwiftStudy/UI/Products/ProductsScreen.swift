@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    private var products = createRandomProducts(count: 10)
+struct ProductsScreen: View {
+    // TODO: Implementar view model e realizar as injeções em um modulo
+    private var getProductsUseCase: GetProductsUseCase { return makeGetProductsUseCase()}
+    private var products: [Product] { return getProductsUseCase.get() }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -42,6 +44,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ProductsScreen()
     }
 }
