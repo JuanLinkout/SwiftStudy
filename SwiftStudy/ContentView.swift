@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var products = createRandomProducts(count: 10)
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading, spacing: 0) {
+            HStack() {
+                Text("Listagem de produtos")
+                    .bold()
+            }
+            .frame(maxWidth: .infinity)
+            .padding(20)
+            
+            Divider()
+            
+            ScrollView {
+                LazyVGrid(columns: [GridItem(spacing: 12), GridItem(spacing: 12)]) {
+                    ForEach(products, id: \.self.id) { item in
+                        ProductCard(product: item) {
+                            print(item)
+                        }
+                    }
+                }
+                .padding(16)
+            }
         }
-        .padding()
+        .frame(
+            maxWidth: .infinity,
+            maxHeight: .infinity,
+            alignment: .topLeading
+        )
     }
 }
 
