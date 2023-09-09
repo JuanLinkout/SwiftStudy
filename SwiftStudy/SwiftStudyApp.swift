@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftStudyApp: App {
+    private let productsViewModel = makeGetProductsViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ProductsScreen()
+            ProductsScreen(viewModel: productsViewModel)
         }
     }
 }

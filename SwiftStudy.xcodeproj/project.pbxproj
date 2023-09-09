@@ -14,7 +14,6 @@
 		25B4310C2AABAC7C001CE565 /* SwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B4310B2AABAC7C001CE565 /* SwiftStudyTests.swift */; };
 		25B431162AABAC7C001CE565 /* SwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B431152AABAC7C001CE565 /* SwiftStudyUITests.swift */; };
 		25B431182AABAC7C001CE565 /* SwiftStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B431172AABAC7C001CE565 /* SwiftStudyUITestsLaunchTests.swift */; };
-		25B431252AABC08D001CE565 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B431242AABC08D001CE565 /* ProductCard.swift */; };
 		25B431282AABCB5D001CE565 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B431272AABCB5D001CE565 /* Product.swift */; };
 		25B4312B2AACB7CE001CE565 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B4312A2AACB7CE001CE565 /* Colors.swift */; };
 		25B4312E2AACFA5D001CE565 /* MaskCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B4312D2AACFA5D001CE565 /* MaskCurrency.swift */; };
@@ -23,7 +22,9 @@
 		25B4313F2AAD0F5B001CE565 /* GetProductsImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B4313E2AAD0F5B001CE565 /* GetProductsImplementation.swift */; };
 		25B431442AAD0FE6001CE565 /* GetProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B431432AAD0FE6001CE565 /* GetProductsRepository.swift */; };
 		25B4314B2AAD1046001CE565 /* GetProductRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B4314A2AAD1046001CE565 /* GetProductRepositoryMock.swift */; };
-		25B431502AAD10DD001CE565 /* MakeGetProductUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B4314F2AAD10DD001CE565 /* MakeGetProductUseCase.swift */; };
+		25B431502AAD10DD001CE565 /* MakeProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B4314F2AAD10DD001CE565 /* MakeProductsViewModel.swift */; };
+		25B431542AAD167E001CE565 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B431532AAD167E001CE565 /* ProductsViewModel.swift */; };
+		25B431572AAD185F001CE565 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B431562AAD185F001CE565 /* ProductCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,6 @@
 		25B431112AABAC7C001CE565 /* SwiftStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B431152AABAC7C001CE565 /* SwiftStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITests.swift; sourceTree = "<group>"; };
 		25B431172AABAC7C001CE565 /* SwiftStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		25B431242AABC08D001CE565 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		25B431272AABCB5D001CE565 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		25B4312A2AACB7CE001CE565 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		25B4312D2AACFA5D001CE565 /* MaskCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskCurrency.swift; sourceTree = "<group>"; };
@@ -63,7 +63,9 @@
 		25B4313E2AAD0F5B001CE565 /* GetProductsImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsImplementation.swift; sourceTree = "<group>"; };
 		25B431432AAD0FE6001CE565 /* GetProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsRepository.swift; sourceTree = "<group>"; };
 		25B4314A2AAD1046001CE565 /* GetProductRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductRepositoryMock.swift; sourceTree = "<group>"; };
-		25B4314F2AAD10DD001CE565 /* MakeGetProductUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeGetProductUseCase.swift; sourceTree = "<group>"; };
+		25B4314F2AAD10DD001CE565 /* MakeProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeProductsViewModel.swift; sourceTree = "<group>"; };
+		25B431532AAD167E001CE565 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		25B431562AAD185F001CE565 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		25B430F92AABAC78001CE565 /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				25B431512AAD1660001CE565 /* Presentation */,
 				25B4314C2AAD10A4001CE565 /* Main */,
 				25B431452AAD1014001CE565 /* Infra */,
 				25B4313B2AAD0F3E001CE565 /* Data */,
@@ -181,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				25B431292AACB7BF001CE565 /* Themes */,
-				25B431332AAD0E3E001CE565 /* Components */,
 				25B431322AAD0E02001CE565 /* Products */,
 			);
 			path = UI;
@@ -190,23 +192,8 @@
 		25B431322AAD0E02001CE565 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				25B431552AAD1850001CE565 /* Components */,
 				25B430FC2AABAC78001CE565 /* ProductsScreen.swift */,
-			);
-			path = Products;
-			sourceTree = "<group>";
-		};
-		25B431332AAD0E3E001CE565 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				25B431342AAD0E46001CE565 /* Products */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		25B431342AAD0E46001CE565 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				25B431242AABC08D001CE565 /* ProductCard.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -328,9 +315,33 @@
 		25B4314E2AAD10B4001CE565 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				25B4314F2AAD10DD001CE565 /* MakeGetProductUseCase.swift */,
+				25B4314F2AAD10DD001CE565 /* MakeProductsViewModel.swift */,
 			);
 			path = Product;
+			sourceTree = "<group>";
+		};
+		25B431512AAD1660001CE565 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				25B431522AAD1666001CE565 /* Product */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		25B431522AAD1666001CE565 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				25B431532AAD167E001CE565 /* ProductsViewModel.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		25B431552AAD1850001CE565 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				25B431562AAD185F001CE565 /* ProductCard.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +477,8 @@
 				25B4313A2AAD0EBA001CE565 /* GetProductsUseCase.swift in Sources */,
 				25B4312E2AACFA5D001CE565 /* MaskCurrency.swift in Sources */,
 				25B4314B2AAD1046001CE565 /* GetProductRepositoryMock.swift in Sources */,
+				25B431542AAD167E001CE565 /* ProductsViewModel.swift in Sources */,
+				25B431572AAD185F001CE565 /* ProductCard.swift in Sources */,
 				25B430FD2AABAC78001CE565 /* ProductsScreen.swift in Sources */,
 				25B4312B2AACB7CE001CE565 /* Colors.swift in Sources */,
 				25B431282AABCB5D001CE565 /* Product.swift in Sources */,
@@ -473,8 +486,7 @@
 				25B431442AAD0FE6001CE565 /* GetProductsRepository.swift in Sources */,
 				25B431302AAD026A001CE565 /* CreateRandomProduct.swift in Sources */,
 				25B430FB2AABAC78001CE565 /* SwiftStudyApp.swift in Sources */,
-				25B431502AAD10DD001CE565 /* MakeGetProductUseCase.swift in Sources */,
-				25B431252AABC08D001CE565 /* ProductCard.swift in Sources */,
+				25B431502AAD10DD001CE565 /* MakeProductsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
